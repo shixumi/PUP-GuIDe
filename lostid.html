@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GuIDe | Lost ID</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="formheader is-preload">
+
+		<!-- Feedback Overlay -->
+		<div class="li_overlay_main" id="li_overlay_main">
+			<div class="li_overlay_window">
+				<p id="li_overlay_header">Thank you!</p> 
+				<p>WE HAVE RECEIVED YOUR RESPONSE, WE WILL GET BACK TO YOU SOON!</p>
+				<br>
+				<button id="li_overlay_button" onclick="redirect_button()">OKAY</button>
+			</div>
+		</div>
+
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="lostid.html">Replacement of Lost ID</a></h1>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">	
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">COR Forms</a>
+									<ul>
+										<li><a href="lostcor.html">Duplicate of Lost COR</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">ID Forms</a>
+									<ul>
+										<li><a href="newid.html">New/Replacement of ID</a></li>
+										<li><a href="lostid.html">Replacement of Lost ID</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Visit Us</a>
+									<ul>
+										<li><a target="_blank" href="https://www.facebook.com/ThePUPOfficial/">Facebook</a></li>
+										<li><a target="_blank" href="https://www.instagram.com/ThePUPOfficial/">Instagram</a></li>
+										<li><a target="_blank" href="https://twitter.com/ThePUPOfficial">X</a></li>
+									</ul>
+								</li>
+						</nav>
+				</section>
+
+			<!-- Main -->	
+
+				<br>
+				<br>
+
+				<form class="form" onsubmit="return validateForm()" method="POST" action="https://script.google.com/macros/s/AKfycbwwDNg1mZknG7emuCg4ImACY_YtCSlpquzbgfX4ToQElSDLlIyuBVspGqdyCdk-XwDZyQ/exec">
+					<h1 class="text-center">Application Form</h1>
+
+					<!-- Progress bar -->
+						<div class="progressbar">
+							<div class="progress" id="progress"></div>
+							<div class="progress-step progress-step-active" data-title="Terms"></div>
+							<div class="progress-step" data-title="College"></div>
+							<div class="progress-step" data-title="Details"></div>
+						</div>
+			
+					<!-- Form 1 -->
+						<div class="form-step form-step-active">
+							<h2>By proceeding, you agree to these Terms and Conditions</h2>
+							<textarea id="termsTextarea" rows="15" cols="46" readonly> 
+	1. General
+		1.1. By accessing and using this form request site, you agree to comply with the terms and conditions outlined herein. 
+		1.2. This form request site is provided by the Polytechnic University of the Philippines (PUP) for the purpose of facilitating requests related to student services.
+							
+	2. Eligibility 
+		2.1. Users must be current students or authorized personnel of PUP to utilize the services provided by this form request site. 
+		2.2. Users are responsible for providing accurate and up-to-date information when submitting requests. 
+							
+	3. Request Submission 
+		3.1. Requests submitted through this form request site are subject to review and approval by the relevant PUP departments. 
+		3.2. Users will receive confirmation and updates regarding their requests through the contact information provided during submission. 
+
+	4. Confidentiality 
+		4.1. PUP is committed to protecting the confidentiality and security of the information submitted through this form request site. 
+		4.2. Users are advised not to share sensitive personal information through unsecured channels. 
+							
+	5. Compliance with Policies 
+		5.1. Users must adhere to all PUP policies and guidelines when utilizing this form request site. 
+		5.2. Any misuse or violation of policies may result in the rejection of requests and disciplinary action. 
+							
+	6. Availability of Services 
+		6.1. PUP reserves the right to modify, suspend, or terminate services provided through this form request site without prior notice. 
+		6.2. PUP is not liable for any loss or inconvenience resulting from the unavailability or interruption of services. 
+							
+	7. Governing Law 
+		7.1. These terms and conditions are governed by the laws of the Republic of the Philippines. 
+		7.2. Any disputes arising from the use of this form request site shall be subject to the exclusive jurisdiction of the courts in the Philippines.
+							</textarea>
+							<div class="">
+								<a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+							</div>
+						</div>
+
+					<!-- Form 2 -->
+						<div class="form-step">
+							<div class="input-drop">
+								<label for="branch">Branch</label>
+								<select id="branch" name="branch">
+									<option value="main">Main</option>
+									<option value="other_branch">Other Branches and Campuses</option>
+								</select>
+							</div>
+							<div class="input-drop">
+								<label for="college">College</label>
+								<select id="college" name="college">
+									<option value="CAF">College of Accountancy and Finance (CAF)</option>
+									<option value="CADBE">College of Architecture, Design and the Built Environment (CADBE)</option>
+									<option value="CAL">College of Arts and Letters (CAL)</option>
+									<option value="CBA">College of Business Administration (CBA)</option>
+									<option value="COC">College of Communciation (COC)</option>
+									<option value="CCIS">College of Computer and Information Sciences (CCIS)</option>
+									<option value="COED">College of Education (COED)</option>
+									<option value="CE">College of Engineering (CE)</option>
+									<option value="CHK">College of Human Kinetics (CHK)</option>
+									<option value="CL">College of Law (CL)</option>
+									<option value="CPSPA">College of Political Science and Public Administration (CPSPA)</option>
+									<option value="CSSD">College of Social Sciences and Development (CSSD)</option>
+									<option value="CS">College of Science (CS)</option>
+									<option value="CTHTM">College of Tourism, Hospitality and Transportation Management (CTHTM)</option>
+								</select>
+							</div>
+							<div class="input-group">
+								<label for="course">Course, Year, & Section</label>
+								<input type="text" name="course" id="course" placeholder="BSIT 3-1N" required/>
+							</div>
+							<div class="btns-group">
+								<a href="#" class="btn btn-prev">Previous</a>
+								<a href="#" class="btn btn-next">Next</a>
+							</div>
+						</div>
+
+					<!-- Form 3 -->
+						<div class="form-step">
+							<div class="input-group">
+								<label for="email">E-mail Address</label>
+								<input type="text" name="email" id="email" placeholder="juandcruz@gmail.com"  required/>
+							</div>
+							<div class="input-group">
+								<label for="studentnumber">Student Number</label>
+								<input type="text" name="studentnumber" id="studentnumber" placeholder="2024-XXXXX-XXXXX" required/>
+							</div>
+							<div class="input-group">
+								<label for="firstname">First Name</label>
+								<input type="text" name="firstname" id="firstname" placeholder="Juan" required/>
+							</div>
+							<div class="input-group">
+								<label for="middlename">Middle Name</label>
+								<input type="text" name="middlename" id="middlename" placeholder="Dela" required/>
+							</div>
+							<div class="input-group">
+								<label for="lastname">Last Name</label>
+								<input type="text" name="lastname" id="lastname" placeholder="Cruz" required/>
+							</div>
+							<div class="input-group">
+								<label for="datelost">Date of Lost of ID</label>
+								<input type="date" name="datelost" id="datelost"  required/>
+							</div>
+							<div class="input-group">
+								<label for="reasonlost">Reason for Lost of ID</label>
+								<input type="text" name="reasonlost" id="reasonlost" placeholder="Type here..." required/>
+							</div>
+							<div class="btns-group">
+								<a href="#" class="btn btn-prev">Previous</a>
+								<input type="submit" value="Submit" class="btn" onclick="li_feedback_popup()">
+							</div>
+						</div>
+				</form>
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>	
+				<script src="assets/js/validation.js"></script>
+				<script src="assets/js/form-submission-handler.js" data-cfasync="false"></script>
+				<script src="assets/js/popup.js"></script>
+		</div>
+	</body>
+</html>
