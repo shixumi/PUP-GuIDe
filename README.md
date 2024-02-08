@@ -55,14 +55,14 @@ Clone the Repository:
 Open your terminal or command prompt and run the following command to clone the GuIDe repository to your local machine:
 
 ```bash
-git clone https://github.com/shixumi/PUP-Forms.git
+git clone https://github.com/shixumi/PUP-GuIDe.git
 ```
 
 Navigate to the Project Directory:
 Change your working directory to the project folder:
 
 ```bash
-cd PUP-Forms
+cd PUP-GuIDe
 ```
 Install Dependencies:
 Install the required dependencies using npm (Node Package Manager):
