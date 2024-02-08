@@ -29,5 +29,5 @@ function contact_feedback_popup() {
 }
 
 function redirect_button() {
-	window.location.replace("../index.html");
+	window.location.replace("https://shixumi.github.io/PUP-GuIDe/");
 }
