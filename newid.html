@@ -10,12 +10,12 @@
 	<body class="formheader is-preload">
 
 		<!-- Feedback Overlay -->
-		<div class="ni_overlay_main" id="ni_overlay_main">
-			<div class="ni_overlay_window">
-				<p id="ni_overlay_header">Thank you!</p> 
+		<div class="feedback_overlay_main" id="feedback_overlay_main">
+			<div class="feedback_overlay_window">
+				<p id="feedback_overlay_header">Thank you!</p> 
 				<p>WE HAVE RECEIVED YOUR RESPONSE, WE WILL GET BACK TO YOU SOON!</p>
 				<br>
-				<button id="ni_overlay_button" onclick="redirect_button()">OKAY</button>
+				<button id="feedback_overlay_button" onclick="redirect_button()">OKAY</button>
 			</div>
 		</div>
 	
@@ -223,8 +223,9 @@
 							</div>
 							<div class="btns-group">
 								<a href="#" class="btn btn-prev">Previous</a>
-								<input type="submit" value="Submit" class="btn" onclick="ni_feedback_popup()">
+								<input type="submit" value="Submit" class="btn">
 							</div>
+							<div style="display:none" class="thankyou_message"></div>
 						</div>
 				</form>
 		

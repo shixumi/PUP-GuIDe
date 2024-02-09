@@ -10,12 +10,12 @@
 	<body class="formheader is-preload">
 
 		<!-- Feedback Overlay -->
-		<div class="li_overlay_main" id="li_overlay_main">
-			<div class="li_overlay_window">
-				<p id="li_overlay_header">Thank you!</p> 
+		<div class="feedback_overlay_main" id="feedback_overlay_main">
+			<div class="feedback_overlay_window">
+				<p id="feedback_overlay_header">Thank you!</p> 
 				<p>WE HAVE RECEIVED YOUR RESPONSE, WE WILL GET BACK TO YOU SOON!</p>
 				<br>
-				<button id="li_overlay_button" onclick="redirect_button()">OKAY</button>
+				<button id="feedback_overlay_button" onclick="redirect_button()">OKAY</button>
 			</div>
 		</div>
 
@@ -62,7 +62,7 @@
 				<br>
 				<br>
 
-				<form class="form" onsubmit="return validateForm()" method="POST" action="https://script.google.com/macros/s/AKfycbwwDNg1mZknG7emuCg4ImACY_YtCSlpquzbgfX4ToQElSDLlIyuBVspGqdyCdk-XwDZyQ/exec">
+				<form class="form" method="POST" action="https://script.google.com/macros/s/AKfycbwwDNg1mZknG7emuCg4ImACY_YtCSlpquzbgfX4ToQElSDLlIyuBVspGqdyCdk-XwDZyQ/exec">
 					<h1 class="text-center">Application Form</h1>
 
 					<!-- Progress bar -->
@@ -180,8 +180,9 @@
 							</div>
 							<div class="btns-group">
 								<a href="#" class="btn btn-prev">Previous</a>
-								<input type="submit" value="Submit" class="btn" onclick="li_feedback_popup()">
+								<input type="submit" value="Submit" class="btn">
 							</div>
+							<div style="display:none" class="thankyou_message"></div>
 						</div>
 				</form>
 
@@ -192,7 +193,6 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>	
-				<script src="assets/js/validation.js"></script>
 				<script src="assets/js/form-submission-handler.js" data-cfasync="false"></script>
 				<script src="assets/js/popup.js"></script>
 		</div>

@@ -40,7 +40,10 @@ body {
 	line-height: 1;
 }
 label {
-	color: #1b1b1b;
+	font-weight: 425;
+	font-size: 12pt;
+	color: #840000;
+
 }
 ol, ul {
 	list-style: none;
@@ -109,9 +112,9 @@ input, select, textarea {
 
 	input {
 		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
-		color: #9e94a5;
-		font-size: 11pt;
+		font-weight: 400;
+		font-size: inherit;
+		color: #333333;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
 		display: block;
@@ -136,8 +139,8 @@ input, select, textarea {
 	body, select {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 400;
-		color: #55575a;
-		font-size: 14pt;
+		font-size: inherit;
+		color: #333333;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
 	}
@@ -148,6 +151,7 @@ input, select, textarea {
 		color: #919499;
 		border: 1px solid #ccc;
 		border-radius: 0.25rem;
+		resize: none;
 		font-size: 11pt;
 		line-height: 1.75em;
 		letter-spacing: 0.015em;
@@ -1613,11 +1617,12 @@ input, select, textarea {
 /* Form */
 
 	.form {
-		width: clamp(30%, 800px, 800px);
+		width: clamp(50%, 50%, 80%);
 		margin: 0 auto;
 		border: 1px solid #ccc;
 		border-radius: 0.35rem;
 		padding: 1.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.form-step {
@@ -1647,6 +1652,12 @@ input, select, textarea {
 
 	.input-drop label {
 		position: relative;
+	}
+
+	input[type="text"]::placeholder {
+		font-weight: 300;
+		font-style: 'Poppins', sans-serif;
+		color: #A9A9A9;
 	}
 
 	@keyframes animate {
@@ -1813,6 +1824,8 @@ input, select, textarea {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1.5rem;
+		min-width: none;
+		min-height: none;
 	}
 			  
 	.btn {
@@ -2212,6 +2225,7 @@ input, select, textarea {
 	}
 
 		#nav > ul {
+			background-color: rgba(0, 0, 0, 0.4);
 			display: inline-block;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
@@ -2255,7 +2269,8 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		background: #222835 url("images/overlay.png");
+		backdrop-filter: blur(10px);
+		background-color: rgba(0, 0, 0, 0.4);
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
 		box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
@@ -2579,6 +2594,42 @@ input, select, textarea {
 				padding-top: 4em;
 				margin-top: 4em;
 			}
+		
+		/* Overlay */
+			
+		.overlay_window {
+			padding-top: -50px;
+			background: white;
+			position: absolute;
+			opacity: 1;
+			left: 40px !important;
+			width: 90%;
+			height: 70% !important;
+			border-radius: 10px;
+			overflow-y: auto;
+		}
+
+		#overlay_close_button {
+			width: 30px;
+			height: 30px;
+			font-size: 20px;
+			text-align: center;
+			margin-left: 95% !important;
+		}
+
+		.feedback_overlay_window {
+			background: #821414;
+			width: 50% !important;
+			height: 35% !important;
+			border-radius: 10px;
+			margin-left: 25% !important;
+			margin-top: 25% !important;
+			text-align: center;
+			padding-top: 7%;
+			padding-left: 1%;
+			padding-right: 1%;
+			color: white;
+		}
 
 	}
 
@@ -2768,7 +2819,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: rgb(100, 20, 20) url("images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
@@ -2839,6 +2890,40 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+		/* Overlay */
+			.overlay_window {
+				padding-top: -50px;
+				background: white;
+				position: absolute;
+				opacity: 1;
+				left: 40px !important;
+				width: 90%;
+				height: 70% !important;
+				border-radius: 10px;
+				overflow-y: auto;
+			}
+
+			#overlay_close_button {
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+				text-align: center;
+				margin-left: 90% !important;
+			}
+
+			.feedback_overlay_window {
+				background: #821414;
+				width: 70% !important;
+				height: 35% !important;
+				border-radius: 10px;
+				margin-left: 15% !important;
+				margin-top: 30% !important;
+				text-align: center;
+				padding-top: 7%;
+				padding-left: 1%;
+				padding-right: 1%;
+				color: white;
+			}
 
 	}
 
@@ -2898,13 +2983,12 @@ input, select, textarea {
 			input[type="reset"],
 			button,
 			.button {
-				display: block;
-				width: 100%;
-				font-size: 1em;
-				max-width: 30em;
-				margin: 0 auto;
+				font-size: 0.8em;
 			}
 
+			.btn {
+				margin-top: 0px;
+			}
 		/* Actions */
 
 			ul.actions {
@@ -3128,6 +3212,51 @@ input, select, textarea {
 				transform: translate(-50%, -50%) scale(1);
 			}
 
+			.overlay_window {
+				padding-top: -50px;
+				background: white;
+				position: absolute;
+				opacity: 1;
+				left: 20px !important;
+				width: 90%;
+				height: 70% !important;
+				border-radius: 10px;
+				overflow-y: auto;
+			}
+
+			#overlay_close_button {
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+				text-align: center;
+				margin-left: 90% !important;
+			}
+
+			.feedback_overlay_window {
+				background: #821414;
+				width: 70% !important;
+				height: 35% !important;
+				border-radius: 10px;
+				margin-left: 15% !important;
+				margin-top: 50% !important;
+				text-align: center;
+				padding-top: 7%;
+				padding-left: 1%;
+				padding-right: 1%;
+				color: white;
+			}
+
+			
+			/* Form */
+			.form {
+				width: clamp(50%, 90%, 100%);
+				margin: 0 auto;
+				border: 1px solid #ccc;
+				border-radius: 0.35rem;
+				padding: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+
 	}
 
 /* Transition */
@@ -3174,15 +3303,16 @@ input, select, textarea {
 	}
 		
 	.overlay_window {
-		position: absolute;
-		left: 20%;
-		top: 20%;
 		background: white;
+		position: absolute;
+		left: 90px;
+		top: 17%;
 		opacity: 1;
-		width: 60%;
-		height: 45%;
+		width: 90%;
+		height: 60%;
 		border-radius: 10px;
 		padding: 2.5%;
+		overflow-y: auto;
 	}
 		
 	#overlay_close_button {
@@ -3201,9 +3331,9 @@ input, select, textarea {
 		height: 50%;
 	}
 
-/* COR Overlay */
+/* Feedback Overlay */
 
-	#lc_overlay_main {
+	#feedback_overlay_main {
 		background: rgba(0, 0, 0, 0.5);
 		position: fixed;
 		width: 100%;
@@ -3215,19 +3345,19 @@ input, select, textarea {
 
 	}
 
-	#lc_overlay_main.active {
+	#feedback_overlay_main.active {
 		animation: fadeIn .5s;
 		opacity: 1;
 		z-index: 100;
 	}
 
-	.lc_overlay_window {
+	.feedback_overlay_window {
 		background: #821414;
-		width: 430px;
-		height: 500px;
+		width: 20%;
+		height: 47%;
 		border-radius: 10px;
-		margin-left: 38%;
-		margin-top: 10%;
+		margin-left: 41%;
+		margin-top: 13%;
 		text-align: center;
 		padding-top: 7%;
 		padding-left: 1%;
@@ -3235,141 +3365,11 @@ input, select, textarea {
 		color: white;
 	}
 
-	#lc_overlay_button {
+	#feedback_overlay_button {
 		background-color: white;
 	}
 
-	#lc_overlay_header {
+	#feedback_overlay_header {
 		font-size: 40px;
 		font-weight: bold;
 	}
-
-/* Lost ID Overlay */
-
-	#li_overlay_main {
-		background: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		animation: fadeOut .5s;
-		display: none;
-		opacity: 0;
-		z-index: -1;
-
-	}
-
-	#li_overlay_main.active {
-		animation: fadeIn .5s;
-		opacity: 1;
-		z-index: 100;
-	}
-
-	.li_overlay_window {
-		background: #821414;
-		width: 430px;
-		height: 500px;
-		border-radius: 10px;
-		margin-left: 38%;
-		margin-top: 10%;
-		text-align: center;
-		padding-top: 7%;
-		padding-left: 1%;
-		padding-right: 1%;
-		color: white;
-	}
-
-	#li_overlay_button {
-		background-color: white;
-	}
-
-	#li_overlay_header {
-		font-size: 40px;
-		font-weight: bold;
-	}
-
-/* New ID Overlay */
-
-	#ni_overlay_main {
-		background: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		animation: fadeOut .5s;
-		display: none;
-		opacity: 0;
-		z-index: -1;
-
-	}
-
-	#ni_overlay_main.active {
-		animation: fadeIn .5s;
-		opacity: 1;
-		z-index: 100;
-	}
-
-	.ni_overlay_window {
-		background: #821414;
-		width: 430px;
-		height: 500px;
-		border-radius: 10px;
-		margin-left: 38%;
-		margin-top: 10%;
-		text-align: center;
-		padding-top: 7%;
-		padding-left: 1%;
-		padding-right: 1%;
-		color: white;
-	}
-
-	#ni_overlay_button {
-		background-color: white;
-	}
-
-	#ni_overlay_header {
-		font-size: 40px;
-		font-weight: bold;
-	}
-
-/* Contact Overlay */
-
-#contact_overlay_main {
-	background: rgba(0, 0, 0, 0.5);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	animation: fadeOut .5s;
-	display: none;
-	opacity: 0;
-	z-index: -1;
-
-}
-
-#contact_overlay_main.active {
-	animation: fadeIn .5s;
-	opacity: 1;
-	z-index: 100;
-}
-
-.contact_overlay_window {
-	background: #821414;
-	width: 430px;
-	height: 500px;
-	border-radius: 10px;
-	margin-left: 38%;
-	margin-top: 10%;
-	text-align: center;
-	padding-top: 7%;
-	padding-left: 1%;
-	padding-right: 1%;
-	color: white;
-}
-
-#contact_overlay_button {
-	background-color: white;
-}
-
-#contact_overlay_header {
-	font-size: 40px;
-	font-weight: bold;
-}
-
