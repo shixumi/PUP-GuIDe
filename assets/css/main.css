@@ -1657,7 +1657,7 @@ input, select, textarea {
 	input[type="text"]::placeholder {
 		font-weight: 300;
 		font-style: 'Poppins', sans-serif;
-		color: #A9A9A9;
+		color: #d2d8e0;
 	}
 
 	@keyframes animate {
