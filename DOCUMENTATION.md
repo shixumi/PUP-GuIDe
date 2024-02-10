@@ -13,14 +13,17 @@ Hosting: Github
 ## Overview
 ### Homepage
 This is the landing page of our GuIDe, where you can access our list of forms through the **navigation bar**, or the **get started** button.
+
 ![Alt text](images/homepage.jpg)
 
 ### Contact
 This is where you can contact us, for any support relating to our website. Your messages are directed straight to our emails to ensure a fast response.
+
 ![Alt text](images/contact.png)
 
 ### Forms
 This is where you apply for an ID or a COR.
+
 ![Alt text](images/forms.png)
 
 ### Challenges Faced
