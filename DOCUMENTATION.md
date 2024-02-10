@@ -17,11 +17,11 @@ This is the landing page of our GuIDe, where you can access our list of forms th
 
 ### Contact
 This is where you can contact us, for any support relating to our website. Your messages are directed straight to our emails to ensure a fast response.
-![Alt text](images/contact.jpg)
+![Alt text](images/contact.png)
 
 ### Forms
 This is where you apply for an ID or a COR.
-![Alt text](images/forms.jpg)
+![Alt text](images/forms.png)
 
 ### Challenges Faced
 During the development of PUP GuIDE, the development team encountered several challenges:
