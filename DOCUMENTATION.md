@@ -26,6 +26,13 @@ This is where you apply for an ID or a COR.
 
 ![Alt text](images/forms.png)
 
+### Spreadsheets
+New ID: https://docs.google.com/spreadsheets/d/18jwmQ_lYYZjQ8Hhr3UOcWKASnny14x6bLztE3vp3NBI/edit?usp=sharing 
+
+Lost ID: https://docs.google.com/spreadsheets/d/1LoDu8Z_zCOLLGmlrblIGL30kGkQDapNRo83zgHsoq3I/edit?usp=sharing 
+
+Lost COR: https://docs.google.com/spreadsheets/d/196k_rO54XqHiG1fwHBWiuY9c_u-fjaSXB-nz51X7ap8/edit?usp=sharing
+
 ### Challenges Faced
 During the development of PUP GuIDE, the development team encountered several challenges:
 
